@@ -81,7 +81,7 @@ let g:solarized_termcolors = 256
 let g:solarized_termtrans = 1
 let g:solarized_contrast="high"
 :set cursorline
-:set background=dark
+:set background=light
 
 let g:unite_enable_start_insert=1
 let mapleader = "\<Space>"
