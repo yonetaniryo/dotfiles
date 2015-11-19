@@ -55,15 +55,16 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'vim-voom/VOoM'
-NeoBundle 'klen/python-mode'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tell-k/vim-autopep8'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'davidhalter/jedi-vim'
 
 call neobundle#end()
 
@@ -101,14 +102,11 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
-" neocomplete
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-
 noremap <Leader>ll :!latexmk -f %<CR>
 noremap <Leader>ls :!pdflatex %<CR>
 
-" python mode
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_doc = 0
+
+" python related
+let g:syntastic_python_checkers = ['pep8']
+let g:jedi#popup_select_first = 0
+let g:jedi#popup_on_dot = 0
