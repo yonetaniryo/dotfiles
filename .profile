@@ -23,8 +23,8 @@ alias nbr="jupyter-notebook --no-browser --ip='157.82.147.147'"
 export CPLEX_PATH="/Users/yonetani/Dropbox/programs/downloaded/IBM/ILOG/CPLEX_Studio1261/"
 
 # vi
-# alias vi='/usr/local/bin/vim'
-# alias vim='/usr/local/bin/vim'
+alias vi='/usr/local/bin/vim'
+alias vim='/usr/local/bin/vim'
 
 # git 
 alias gst='git status'
