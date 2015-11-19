@@ -10,14 +10,6 @@ export http_proxy=http://proxy.iis.u-tokyo.ac.jp:8080
 
 # Python
 export PYTHONIOENCODING=utf-8
-alias enpkg="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/enpkg"
-#alias ipython="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/ipython"
-#alias canopython="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/python"
-#alias python="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/python"
-#alias pip="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/pip"
-#alias easy_install="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/easy_install"
-#alias pydoc="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/pydoc"
-#alias nb="/Users/yonetani/Library/Enthought/Canopy_64bit/User/bin/jupyter-notebook"
 alias nb="jupyter-notebook"
 alias nbr="jupyter-notebook --no-browser --ip='157.82.147.147'"
 export CPLEX_PATH="/Users/yonetani/Dropbox/programs/downloaded/IBM/ILOG/CPLEX_Studio1261/"

@@ -55,8 +55,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'vim-voom/VOoM'
-NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'scrooloose/syntastic'
+NeoBundle 'klen/python-mode'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'bling/vim-airline'
@@ -110,9 +109,6 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 noremap <Leader>ll :!latexmk -f %<CR>
 noremap <Leader>ls :!pdflatex %<CR>
 
-" jedi-vim
-let g:jedi#popup_select_first = 0
-let g:jedi#popup_on_dot = 0
-
-" syntastic
-let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+" python mode
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_doc = 0
