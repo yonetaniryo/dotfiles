@@ -2,8 +2,8 @@
 
 autocmd FileType python setl autoindent
 autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-set tabstop=2 shiftwidth=2 softtabstop=2
-"autocmd FileType python setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
+"set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType python setl expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 " settings from http://lambdalisue.hatenablog.com/entry/2013/06/23/071344
 augroup MyAutoCmd
