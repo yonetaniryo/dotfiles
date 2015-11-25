@@ -50,7 +50,8 @@ plugins=(git)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/opt/local/bin:/opt/local/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+# other paths 
+source ~/.profile
 
 source $ZSH/oh-my-zsh.sh
 
@@ -76,11 +77,10 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.profile
+source ~/.aliases
+bindkey -v
 
+# peco
 function peco-select-history() {
 	local tac
 	if which tac > /dev/null; then
@@ -97,9 +97,5 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^R' peco-select-history
 
+# autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-export PATH=~/.local/bin:$PATH
-
-
-alias -s py=python
