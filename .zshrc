@@ -78,7 +78,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 source ~/.aliases
-bindkey -v
 
 # peco
 function peco-select-history() {
