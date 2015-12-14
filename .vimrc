@@ -93,10 +93,6 @@ if executable('ag')
 	let g:unite_source_grep_recursive_opt = ''
 endif
 
-nnoremap <Leader>vg :vimgrep
-nnoremap <Leader>p :cprevious<CR>
-nnoremap <Leader>n :cnext<CR>
-
 " vim airline
 set laststatus=2
 set showtabline=2
