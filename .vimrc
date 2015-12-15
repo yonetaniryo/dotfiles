@@ -75,7 +75,7 @@ filetype plugin indent on
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
-
+" color
 :colorscheme solarized
 let g:solarized_termcolors = 256
 let g:solarized_termtrans = 1
@@ -83,6 +83,7 @@ let g:solarized_contrast="high"
 :set cursorline
 :set background=light
 
+" unite
 let g:unite_enable_start_insert=1
 let mapleader = "\<Space>"
 noremap <Leader>f :Unite file<CR>
@@ -98,9 +99,9 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
+" latex
 noremap <Leader>ll :!latexmk -f %<CR>
 noremap <Leader>ls :!pdflatex %<CR>
-
 
 " python related
 let g:syntastic_python_checkers = ['pep8']
@@ -108,3 +109,7 @@ let g:jedi#popup_select_first = 0
 let g:jedi#popup_on_dot = 0
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
+
+" vimgrep
+noremap <Leader>/ :vim 
+autocmd QuickFixCmdPost *grep* cwindow
