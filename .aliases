@@ -10,6 +10,6 @@ alias nbr="jupyter-notebook --no-browser --ip='157.82.147.147'"
 
 # misc
 alias ll='ls -laG'
-lt() { tree -fhCa -L $1 | less; }
 alias tm='tmux attach'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias c='cd ..'
