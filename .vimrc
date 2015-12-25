@@ -64,6 +64,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'davidhalter/jedi-vim'
 
 call neobundle#end()
 
@@ -106,6 +107,8 @@ noremap <Leader>ls :!pdflatex %<CR>
 let g:syntastic_python_checkers = ['pep8']
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
+let g:jedi#popup_on_dot = 0
+let g:jedi#popup_select_first = 0
 
 " vimgrep
 noremap <Leader>/ :vim 
