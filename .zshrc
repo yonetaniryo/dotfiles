@@ -1,3 +1,5 @@
+export LC_All=en_US.utf-8
+export LANG=en_US.utf-8
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/yonetani/.oh-my-zsh
 
