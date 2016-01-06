@@ -65,6 +65,7 @@ NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'easymotion/vim-easymotion'
 
 call neobundle#end()
 
@@ -113,3 +114,14 @@ let g:jedi#popup_select_first = 0
 " vimgrep
 noremap <Leader>/ :vim 
 autocmd QuickFixCmdPost *grep* cwindow
+
+
+" easymotion
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key
+" binding.
+" nmap s <Plug>(easymotion-s)
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-s2)
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
