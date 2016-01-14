@@ -100,3 +100,5 @@ bindkey '^R' peco-select-history
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+setopt auto_pushd

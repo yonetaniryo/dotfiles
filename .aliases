@@ -12,7 +12,6 @@ alias nbr="jupyter-notebook --no-browser --ip='157.82.147.147'"
 alias ll='ls -laG'
 alias tm='tmux attach'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias c='cd ..'
 
 
 # vim
