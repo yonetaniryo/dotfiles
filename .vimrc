@@ -31,6 +31,24 @@ set fileformats=unix,dos,mac
 set spell
 set spelllang=en
 
+" key mappings
+let mapleader = "\<Space>"
+" unite
+noremap <Leader>ff :Unite file_mru<CR>
+" latex
+noremap <Leader>ll :!latexmk -f %<CR>
+noremap <Leader>ls :!pdflatex %<CR>
+" vimgrep
+noremap <Leader>vg :vim 
+" easymotion
+nmap <Leader>s1 <Plug>(easymotion-s)
+nmap <Leader>s2 <Plug>(easymotion-s2)
+" window controls
+nnoremap sw <C-w>w
+nnoremap so <C-w>w<C-w>o
+nnoremap soo <C-w>o
+noremap <Leader>rel :source ~/.vimrc <CR>
+
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
 
@@ -85,9 +103,6 @@ let g:solarized_contrast="high"
 
 " unite
 let g:unite_enable_start_insert=1
-let mapleader = "\<Space>"
-noremap <Leader>f :Unite file<CR>
-noremap <Leader>ff :Unite file_mru<CR>
 if executable('ag')
 	let g:unite_source_grep_command = 'ag'
 	let g:unite_source_grep_default_opts = '--nogroup --nocolor --column'
@@ -99,10 +114,6 @@ set laststatus=2
 set showtabline=2
 set noshowmode
 
-" latex
-noremap <Leader>ll :!latexmk -f %<CR>
-noremap <Leader>ls :!pdflatex %<CR>
-
 " python related
 let g:syntastic_python_checkers = ['pep8']
 let g:indent_guides_enable_on_vim_startup = 1
@@ -111,16 +122,8 @@ let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
 
 " vimgrep
-noremap <Leader>/ :vim 
 autocmd QuickFixCmdPost *grep* cwindow
 
-
 " easymotion
-" Bi-directional find motion
-" Jump to anywhere you want with minimal keystrokes, with just one key
-" binding.
-" nmap s <Plug>(easymotion-s)
-" Need one more keystroke, but on average, it may be more comfortable.
-nmap s <Plug>(easymotion-s2)
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
