@@ -40,14 +40,18 @@ noremap <Leader>ll :!latexmk -f %<CR>
 noremap <Leader>ls :!pdflatex %<CR>
 " vimgrep
 noremap <Leader>vg :vim 
-" easymotion
-nmap <Leader>s1 <Plug>(easymotion-s)
-nmap <Leader>s2 <Plug>(easymotion-s2)
 " window controls
 nnoremap sw <C-w>w
 nnoremap so <C-w>w<C-w>o
 nnoremap soo <C-w>o
 noremap <Leader>rel :source ~/.vimrc <CR>
+" sneak
+nmap f <Plug>Sneak_s
+nmap F <Plug>Sneak_S
+xmap f <Plug>Sneak_s
+xmap F <Plug>Sneak_S
+omap f <Plug>Sneak_s
+omap F <Plug>Sneak_S
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
@@ -71,7 +75,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-NeoBundle 'vim-voom/VOoM'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'bling/vim-airline'
@@ -82,7 +85,7 @@ NeoBundle 'tell-k/vim-autopep8'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'easymotion/vim-easymotion'
+NeoBundle 'justinmk/vim-sneak'
 
 call neobundle#end()
 
@@ -124,6 +127,5 @@ let g:jedi#popup_select_first = 0
 " vimgrep
 autocmd QuickFixCmdPost *grep* cwindow
 
-" easymotion
-" Turn on case insensitive feature
-let g:EasyMotion_smartcase = 1
+" vim-sneak
+let g:sneak#streak = 1
