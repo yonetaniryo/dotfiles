@@ -46,12 +46,12 @@ nnoremap <Leader>o <C-w>w<C-w>o
 nnoremap <Leader>oo <C-w>o
 noremap <Leader>rel :source ~/.vimrc <CR>
 " sneak
-nmap f <Plug>Sneak_s
-nmap F <Plug>Sneak_S
-xmap f <Plug>Sneak_s
-xmap F <Plug>Sneak_S
-omap f <Plug>Sneak_s
-omap F <Plug>Sneak_S
+nmap s <Plug>Sneak_s
+nmap S <Plug>Sneak_S
+xmap s <Plug>Sneak_s
+xmap S <Plug>Sneak_S
+omap s <Plug>Sneak_s
+omap S <Plug>Sneak_S
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
