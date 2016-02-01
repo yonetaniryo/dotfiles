@@ -41,9 +41,9 @@ noremap <Leader>ls :!pdflatex %<CR>
 " vimgrep
 noremap <Leader>vg :vim 
 " window controls
-nnoremap sw <C-w>w
-nnoremap so <C-w>w<C-w>o
-nnoremap soo <C-w>o
+nnoremap <Leader>w <C-w>w
+nnoremap <Leader>o <C-w>w<C-w>o
+nnoremap <Leader>oo <C-w>o
 noremap <Leader>rel :source ~/.vimrc <CR>
 " sneak
 nmap f <Plug>Sneak_s
