@@ -48,6 +48,8 @@ noremap <Leader>rel :source ~/.vimrc <CR>
 " sneak
 nmap s <Plug>Sneak_s
 nmap S <Plug>Sneak_S
+" ref-dict
+noremap <Leader>dict :Ref hyperdict 
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
@@ -84,6 +86,8 @@ NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'ujihisa/neco-look'
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'mfumi/ref-dicts-en'
 
 call neobundle#end()
 
