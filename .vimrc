@@ -49,7 +49,8 @@ noremap <Leader>rel :source ~/.vimrc <CR>
 nmap s <Plug>Sneak_s
 nmap S <Plug>Sneak_S
 " ref-dict
-noremap <Leader>dict :Ref hyperdict 
+noremap <Leader>d :Ref hyperdict 
+noremap <Leader>dp :Ref hyperdict <C-R>" <CR>
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
