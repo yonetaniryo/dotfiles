@@ -86,6 +86,8 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'justinmk/vim-sneak'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'ujihisa/neco-look'
 
 call neobundle#end()
 
@@ -123,6 +125,13 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
+
+" neocomplete
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+autocmd FileType python setlocal omnifunc=jedi#completions
+let g:jedi#completions_enabled = 0
+let g:jedi#auto_vim_configuration = 0
 
 " vimgrep
 autocmd QuickFixCmdPost *grep* cwindow
