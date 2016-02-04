@@ -53,6 +53,8 @@ noremap <Leader>d :Ref hyperdict
 noremap <Leader>dp :Ref hyperdict <C-R>" <CR>
 noremap <Leader>s :Ref synonym 
 noremap <Leader>sp :Ref synonym <C-R>" <CR>
+" unite outline
+noremap <Leader>o :Unite outline <CR>
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
@@ -88,6 +90,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/neco-look'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'mfumi/ref-dicts-en'
