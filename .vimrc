@@ -91,6 +91,7 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'ujihisa/neco-look'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'mfumi/ref-dicts-en'
+NeoBundle 'matze/vim-tex-fold'
 
 call neobundle#end()
 
@@ -141,3 +142,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " vim-sneak
 let g:sneak#streak = 1
+
+" tex-fold
+let g:tex_fold_additional_envs = ['equation', 'algorithm', 'abstract']
