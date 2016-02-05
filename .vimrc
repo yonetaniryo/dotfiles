@@ -147,4 +147,4 @@ autocmd QuickFixCmdPost *grep* cwindow
 let g:sneak#streak = 1
 
 " tex-fold
-let g:tex_fold_additional_envs = ['equation', 'algorithm', 'abstract']
+let g:tex_fold_additional_envs = ['equation', 'algorithm', 'abstract', 'itemize', 'description', 'enumerate']
