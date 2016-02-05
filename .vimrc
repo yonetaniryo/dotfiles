@@ -54,7 +54,7 @@ noremap <Leader>dp :Ref hyperdict <C-R>" <CR>
 noremap <Leader>s :Ref synonym 
 noremap <Leader>sp :Ref synonym <C-R>" <CR>
 " unite outline
-noremap <Leader>o :Unite outline <CR>
+noremap <Leader>o :Unite outline <CR> <esc>
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
