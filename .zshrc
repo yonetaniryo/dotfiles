@@ -97,6 +97,18 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^R' peco-select-history
+bindkey -r '^[l'
+bindkey -r '^[h'
+bindkey -r '^[k'
+bindkey -r '^[j'
+bindkey -r '^[w'
+bindkey -r '^[b'
+bindkey '^[l' forward-char 
+bindkey '^[h' backward-char
+bindkey '^[w' forward-word
+bindkey '^[b' backward-word
+bindkey '^[k' up-line-or-history
+bindkey '^[j' down-line-or-history
 
 # autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
