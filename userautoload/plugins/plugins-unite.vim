@@ -6,5 +6,5 @@ if executable('ag')
 	let g:unite_source_grep_recursive_opt = ''
 endif
 " unite outline
-noremap <Leader>o :Unite -vertical -winwidth=30 -no-quit outline <CR> <esc>
+noremap <Leader>o :Unite -vertical -winwidth=30 outline <CR> <esc>
 noremap <Leader>ff :Unite file_mru<CR>

@@ -31,7 +31,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " window controls
 noremap <Leader>w <C-w>w
-noremap <Leader>o <C-w>w<C-w>o
 noremap <Leader>oo <C-w>o
 
 " misc
