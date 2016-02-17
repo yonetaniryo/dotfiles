@@ -33,6 +33,7 @@ NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'matze/vim-tex-fold'
+NeoBundle 'Konfekt/FastFold'
 
 call neobundle#end()
 
