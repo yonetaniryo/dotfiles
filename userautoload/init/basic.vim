@@ -21,6 +21,7 @@ set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 set fileformats=unix,dos,mac
 set spell
 set spelllang=en
+set cursorline
 
 " key mappings
 let mapleader = "\<Space>"

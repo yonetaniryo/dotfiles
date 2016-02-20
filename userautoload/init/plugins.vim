@@ -22,7 +22,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'Shougo/vimproc'
-NeoBundle 'bling/vim-airline'
+NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'tell-k/vim-autopep8'
@@ -33,7 +33,7 @@ NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'matze/vim-tex-fold'
-NeoBundle 'Konfekt/FastFold'
+NeoBundle 'NLKNguyen/papercolor-theme'
 
 call neobundle#end()
 
