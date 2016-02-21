@@ -32,8 +32,9 @@ NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite-outline'
-NeoBundle 'matze/vim-tex-fold'
 NeoBundle 'NLKNguyen/papercolor-theme'
+NeoBundle 'lervag/vim-latex'
+NeoBundle 'matze/vim-tex-fold'
 
 call neobundle#end()
 
