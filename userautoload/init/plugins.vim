@@ -35,6 +35,7 @@ NeoBundle 'Shougo/unite-outline'
 NeoBundle 'NLKNguyen/papercolor-theme'
 NeoBundle 'lervag/vim-latex'
 NeoBundle 'matze/vim-tex-fold'
+NeoBundle 'ujihisa/neco-look'
 
 call neobundle#end()
 

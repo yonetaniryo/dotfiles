@@ -29,8 +29,8 @@ set noruler
 let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
 
-" vimgrep
-noremap <Leader>vg :vim 
+" search
+noremap <Leader>g :vim // %<Left><Left><Left>
 autocmd QuickFixCmdPost *grep* cwindow
 
 " window controls
