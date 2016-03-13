@@ -3,8 +3,7 @@ let g:tex_fold_additional_envs = ['equation', 'algorithm', 'abstract', 'itemize'
 " latexmk
 
 let g:vimtex_fold_enabled = 0
-let g:vimtex_fold_automatic = 0
-let g:vimtex_fold_envs = 0
+let g:vimtex_fold_manual = 0
 
 if !exists('g:neocomplete#sources#omni#input_patterns')
 	let g:neocomplete#sources#omni#input_patterns = {}

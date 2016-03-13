@@ -34,8 +34,11 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'NLKNguyen/papercolor-theme'
 NeoBundle 'lervag/vim-latex'
+NeoBundle 'Konfekt/FastFold'
 NeoBundle 'matze/vim-tex-fold'
 NeoBundle 'ujihisa/neco-look'
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'YankRing.vim'
 
 call neobundle#end()
 

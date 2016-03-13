@@ -10,7 +10,6 @@ set switchbuf=useopen
 set showmatch
 set backspace=indent,eol,start
 set number
-set relativenumber
 set wrap
 set textwidth=0
 set nowritebackup
@@ -30,15 +29,21 @@ let mapleader = "\<Space>"
 let maplocalleader = "\<Space>"
 
 " search
-noremap <Leader>g :vim // %<Left><Left><Left>
 autocmd QuickFixCmdPost *grep* cwindow
+noremap <S-s><S-s> :vim // %<Left><Left><Left>
 
 " window controls
-noremap <Leader>w <C-w>w
-noremap <Leader>oo <C-w>o
+noremap <S-w> <C-w>w
+noremap <S-q> :ccl <CR>
+
+" motion
+noremap j gj
+noremap k gk
+noremap <S-b>   (zz
+noremap <S-f>   )zz
+noremap <C-d> <C-d>zz
+noremap <C-u> <C-u>zz
 
 " misc
 noremap <Leader>rel :source ~/.vimrc <CR>
-noremap <Leader>n :<C-u>setlocal relativenumber!<CR>
-noremap j gj
-noremap k gk
+noremap <S-c> :!pbcopy<CR> u
