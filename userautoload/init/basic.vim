@@ -47,3 +47,4 @@ noremap <C-u> <C-u>zz
 " misc
 noremap <Leader>rel :source ~/.vimrc <CR>
 noremap <S-c> :!pbcopy<CR> u
+imap <C-j> <ESC>:w<CR>
