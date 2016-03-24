@@ -39,12 +39,13 @@ noremap <S-q> :ccl <CR>
 " motion
 noremap j gj
 noremap k gk
-noremap <S-b>   (zz
-noremap <S-f>   )zz
-noremap <C-d> <C-d>zz
-noremap <C-u> <C-u>zz
+noremap <S-b>   (
+noremap <S-f>   )
+noremap <C-d> <C-d>
+noremap <C-u> <C-u>
 
 " misc
 noremap <Leader>rel :source ~/.vimrc <CR>
 noremap <S-c> :!pbcopy<CR> u
 imap <C-j> <ESC>:w<CR>
+nnoremap <C-j> :w<CR>
