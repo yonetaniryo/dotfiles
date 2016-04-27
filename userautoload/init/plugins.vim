@@ -39,6 +39,7 @@ NeoBundle 'matze/vim-tex-fold'
 NeoBundle 'ujihisa/neco-look'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'YankRing.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 
 call neobundle#end()
 
