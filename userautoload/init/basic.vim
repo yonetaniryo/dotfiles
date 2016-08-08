@@ -12,6 +12,7 @@ set backspace=indent,eol,start
 set number
 set wrap
 set textwidth=0
+set tabstop=2
 set nowritebackup
 set nobackup
 set noswapfile
@@ -20,7 +21,7 @@ set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 set fileformats=unix,dos,mac
 set spell
-set spelllang=en
+set spelllang=en,cjk
 set cursorline
 set noruler
 
