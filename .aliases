@@ -6,7 +6,7 @@ alias glog='git log --oneline'
 
 # Python
 alias nb="jupyter-notebook"
-alias nbr="jupyter-notebook --no-browser --ip='157.82.147.147'"
+alias nbr="jupyter-notebook --no-browser --ip='157.82.147.153'"
 
 # misc
 alias ll='ls -laG'

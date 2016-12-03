@@ -16,22 +16,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texb
 source ~/.profile
 source ~/.aliases
 
-# peco
-function peco-select-history() {
-	local tac
-	if which tac > /dev/null; then
-		tac="tac"
-	else
-		tac="tail -r"
-	fi
-	BUFFER=$(\history -n 1 | \
-	eval $tac | \
-	peco --query "$LBUFFER")
-	CURSOR=$#BUFFER
-	zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^R' peco-select-history
 bindkey -r '^[l'
 bindkey -r '^[h'
 bindkey -r '^[k'
@@ -46,6 +30,4 @@ bindkey '^[k' up-line-or-history
 bindkey '^[j' down-line-or-history
 
 # autojump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-setopt auto_pushd
+[[ -s /home/yonetani/.autojump/etc/profile.d/autojump.sh ]] && source /home/yonetani/.autojump/etc/profile.d/autojump.sh
