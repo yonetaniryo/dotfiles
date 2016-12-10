@@ -8,3 +8,5 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.latexmkrc ~/.latexmkrc
 ln -s ~/dotfiles/.geeknoterc ~/.geeknoterc
 ln -s ~/dotfiles/userautoload ~/.vim/userautoload
+ln -s ~/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
+ln -s ~/dotfiles/.config/nvim/dein.toml ~/.config/nvim/dein.toml

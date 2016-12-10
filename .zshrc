@@ -49,3 +49,6 @@ bindkey '^[j' down-line-or-history
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 setopt auto_pushd
+
+
+export XDG_CONFIG_HOME=~/.config
