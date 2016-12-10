@@ -44,3 +44,6 @@ repo = 'lervag/vim-latex'
 
 [[plugins]]
 repo = 'matze/vim-tex-fold'
+
+[[plugins]]
+repo = 'zchee/deoplete-jedi'
