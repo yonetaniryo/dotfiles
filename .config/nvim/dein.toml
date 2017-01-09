@@ -35,7 +35,7 @@ hook_add = '''
 repo = 'NLKNguyen/papercolor-theme'
 hook_add = '''
 				set t_Co=256
-				set background=dark
+				set background=light
 				colorscheme PaperColor
 '''
 

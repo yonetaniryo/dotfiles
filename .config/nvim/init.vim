@@ -1,7 +1,5 @@
 :syntax enable
 
-
-set termguicolors
 set ignorecase
 set smartcase
 set incsearch
@@ -52,6 +50,10 @@ imap <C-j> <ESC>:w<CR>
 nnoremap <C-j> :w<CR>
 
 " nvim
+set sh=zsh
+tnoremap <silent> <C-j> <C-\><C-n>gT
+
+" dein
 if &compatible
   set nocompatible               " Be iMproved
 endif

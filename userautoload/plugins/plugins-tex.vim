@@ -1,7 +1,6 @@
 " tex-fold
 let g:tex_fold_additional_envs = ['equation', 'algorithm', 'abstract', 'itemize', 'description', 'enumerate', 'paragraph']
 " latexmk
-
 let g:vimtex_fold_enabled = 0
 let g:vimtex_fold_manual = 0
 
