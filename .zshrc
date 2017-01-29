@@ -11,7 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/opt/local/bin:/opt/local/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/opt/local/bin:/opt/local/sbin:/usr/local/cuda/bin"
 # other paths 
 source ~/.profile
 source ~/.aliases
@@ -49,6 +49,5 @@ bindkey '^[j' down-line-or-history
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 setopt auto_pushd
-
 
 export XDG_CONFIG_HOME=~/.config

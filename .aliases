@@ -6,12 +6,8 @@ alias glog='git log --oneline'
 
 # Python
 alias nb="jupyter-notebook"
-alias nbr="jupyter-notebook --no-browser --ip='157.82.147.147'"
 
 # misc
 alias ll='ls -laG'
 alias tm='tmux attach'
-
-# geeknote
-alias enew='geeknote create --title `date "+%Y%m%d"` --tags "1_PROGRESS"'
-alias eedit='geeknote edit --note `date "+%Y%m%d"` --content "WRITE"'
+alias vim='nvim'

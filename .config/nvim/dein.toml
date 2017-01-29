@@ -47,3 +47,7 @@ repo = 'matze/vim-tex-fold'
 
 [[plugins]]
 repo = 'zchee/deoplete-jedi'
+
+
+[[plugins]]
+repo = 'ujihisa/neco-look'
