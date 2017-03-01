@@ -10,7 +10,7 @@ set switchbuf=useopen
 set showmatch
 set backspace=indent,eol,start
 set number
-set wrap
+set wrap linebreak nolist
 set textwidth=0
 set tabstop=2
 set nowritebackup

@@ -9,5 +9,5 @@ alias nb="jupyter-notebook"
 
 # misc
 alias ll='ls -laG'
-alias tm='tmux attach'
+alias tm='tmux attach -d'
 alias vim='nvim'
